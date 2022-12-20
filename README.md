@@ -1,6 +1,6 @@
 # ginolevano.github.io
 
-# This is my personal web page made with html, sass and Jquery if you want to view the web page you just have to double click on the index.html folder.
+### This is my personal web page made with html, sass and Jquery if you want to view the web page you just have to double click on the index.html folder.
 
 
 # HTML
