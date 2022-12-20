@@ -64,11 +64,9 @@ $(()=>{
                 $(this).removeClass('active')
             }
         })
-
-
         $('.screen__animation').each(function(){
             let myScreemShots = $(this).offset().top
-            
+
             if(window.matchMedia("(max-width: 2000px)").matches){
                 $(this).css({
                     "opacity" : '1',

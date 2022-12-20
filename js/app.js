@@ -101,24 +101,26 @@ $(()=>{
 //MOUSE CUSTOM START
     let mouse = $('.cursor');
     $(window).mousemove((e)=>{
-        mouse.css({
-            top: e.clientY - mouse.height() / 2,
-            left: e.clientX - mouse.width() / 2,
-
-        })
+        if(window.matchMedia("(min-width: 960px)").matches){
+            mouse.css({
+                top: e.clientY - mouse.height() / 2,
+                left: e.clientX - mouse.width() / 2,
+                
+            })
+        }
+        
     })
-    
     $(window).mouseleave(()=>{
         mouse.css({
             "opacity" : '0'
         })
-    })
-
+    }) 
     $(window).mouseenter(()=>{
         mouse.css({
             "opacity" : '1'
         })
-    })
+    })  
+    
     $('.menu__li').mouseover(()=>{
         $('.cursor').addClass('cursorhand__active')
         $('.cursor').css({
@@ -169,9 +171,13 @@ $(()=>{
 
     $('.info__levano').mouseover(()=>{
         $('.cursor').addClass('cursorwidthactive')
+
+        
     })
     $('.info__levano').mouseleave(()=>{
         $('.cursor').removeClass('cursorwidthactive')
+
+        
     })
 
     $('.info__gino').mouseover(()=>{
@@ -193,8 +199,6 @@ $(window).on('scroll',()=>{
         $('.desenfoque').removeClass('turquesa')
     }
 })
-
-
 
 })
 

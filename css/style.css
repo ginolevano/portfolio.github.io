@@ -346,25 +346,31 @@ body {
   -webkit-font-smoothing: antialiased;
   cursor: none;
 }
+@media screen and (max-width: 960px) {
+  body {
+    cursor: default;
+  }
+}
 
 .change__colorbg {
   background-color: var(--colorSECUNDARIO-BLACK);
 }
 
 .cursor {
-  width: 2.5em;
-  height: 2.5em;
   position: fixed;
-  background-color: var(--colorSECUNDARIO-WHITE);
-  border-radius: 50px;
+  background-image: url(../assets/diamon__cursorv2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   pointer-events: none;
+  width: 3em;
+  min-height: 3em;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transition-property: -webkit-transition;
   transition-property: -webkit-transition;
   transition-property: transition;
   transition-property: transition, -webkit-transition;
-  z-index: 12;
+  z-index: 14;
   mix-blend-mode: difference;
   -webkit-transition-timing-function: ease;
           transition-timing-function: ease;
@@ -377,24 +383,20 @@ body {
 
 .cursorwidthactive {
   width: 2px;
-  height: 1.5em;
+  min-height: 1.5em;
+  background-image: none;
   background-color: var(--colorSECUNDARIO-WHITE);
 }
 
 .cursorhand__active {
-  background-image: url(../assets/diamon__cursor.png);
+  width: 3.5em;
+  min-height: 3.5em;
+  background-image: url(../assets/diamon__cursorhand.png);
+  background-size: 80% auto;
   background-repeat: no-repeat;
-  background-size: cover;
-  border: none;
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
-  pointer-events: none;
-  cursor: none;
-  background-color: transparent;
-  width: 4em;
-  min-height: 4em;
-  -webkit-transition-property: background-image, background-repeat, background-size;
-  transition-property: background-image, background-repeat, background-size;
+  background-position: center;
+  -webkit-transition-property: width, min-height, background-image, background-repeat, background-size;
+  transition-property: width, min-height, background-image, background-repeat, background-size;
 }
 
 @-webkit-keyframes cursor__animation {
@@ -418,22 +420,6 @@ body {
             transform: rotate(70deg);
   }
 }
-.cursorhandheart__active {
-  background-image: url(../assets/diamon__cursorv1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-transition: 200ms;
-  transition: 200ms;
-  -webkit-transition-property: background-image, background-repeat, background-size;
-  transition-property: background-image, background-repeat, background-size;
-  border: none;
-  -webkit-animation: none;
-          animation: none;
-  -webkit-backdrop-filter: none;
-          backdrop-filter: none;
-  pointer-events: none;
-}
-
 .animation__on {
   position: fixed;
   z-index: 10;

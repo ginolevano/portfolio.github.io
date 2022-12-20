@@ -9,7 +9,9 @@ body{
     transition: .4s ease;
     -webkit-font-smoothing: antialiased;
     cursor: none;
-
+    @media screen and (max-width:960px) {
+        cursor: default;
+    }
 }
 .change__colorbg{
     background-color: var(--colorSECUNDARIO-BLACK);
@@ -17,16 +19,16 @@ body{
 
 
 .cursor{
-    width: 2.5em;
-    height: 2.5em;
     position: fixed;
-    background-color: var(--colorSECUNDARIO-WHITE);
-    border-radius: 50px;
-    // backdrop-filter: grayscale(100%);
+    background-image: url(../assets/diamon__cursorv2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     pointer-events: none;
+    width: 3em;
+    min-height: 3em;
     transition: all .4s ease;    
     transition-property: transition;
-    z-index:12;
+    z-index:14;
     mix-blend-mode: difference;
     transition-timing-function: ease;
 
@@ -38,27 +40,21 @@ body{
     
 }
 
-
-
 .cursorwidthactive{
     width: 2px;
-    height: 1.5em;
+    min-height: 1.5em;
+    background-image: none;
     background-color: var(--colorSECUNDARIO-WHITE);
 }
 
 .cursorhand__active{
-
-    background-image: url(../assets/diamon__cursor.png);
+    width: 3.5em;
+    min-height: 3.5em;
+    background-image: url(../assets/diamon__cursorhand.png);
+    background-size: 80% auto ;
     background-repeat: no-repeat;
-    background-size: cover;
-    border: none;
-    backdrop-filter: none;
-    pointer-events: none;
-    cursor: none;
-    background-color: transparent;
-    width: 4em;
-    min-height: 4em;
-    transition-property:  background-image,  background-repeat, background-size ;
+    background-position: center;
+    transition-property:width,min-height,  background-image,  background-repeat, background-size ;
     
 }
 
@@ -71,18 +67,18 @@ body{
 
     }
 }
-.cursorhandheart__active{
-    background-image: url(../assets/diamon__cursorv1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: 200ms;
-    transition-property: background-image,  background-repeat, background-size ;
-    border: none;
-    animation: none;
-    backdrop-filter: none;
-    pointer-events: none;
+// .cursorhandheart__active{
+//     background-image: url(../assets/diamon__cursorv1.png);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     transition: 200ms;
+//     transition-property: background-image,  background-repeat, background-size ;
+//     border: none;
+//     animation: none;
+//     backdrop-filter: none;
+//     pointer-events: none;
 
-}
+// }
 
 
 
