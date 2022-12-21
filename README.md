@@ -8,6 +8,7 @@
 # JQUERY
 
 ## Check My Portfolio 2023 👉🏽  https://ginolevano.github.io/
-![Captura de pantalla 2022-12-15 a las 22 25 50](https://user-images.githubusercontent.com/95493476/208726232-16df5166-858c-4431-92ed-4f086c13e6eb.png)
+<img width="1878" alt="Portfolio" src="https://user-images.githubusercontent.com/95493476/208790864-90df9361-8c16-4b7f-8820-7369b1d38dbb.png">
+
 
 ALL THE DEVELOPMENT AND DESIGN BY GINO LEVANO .
