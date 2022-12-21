@@ -1670,7 +1670,7 @@ body {
 }
 @media screen and (max-width: 1595px) {
   .info__imgcont .info__img {
-    max-width: 26vw;
+    max-width: 30vw;
   }
 }
 @media screen and (max-width: 960px) {
