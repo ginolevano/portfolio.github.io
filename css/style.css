@@ -303,18 +303,24 @@ body {
   }
 }
 @-webkit-keyframes aparecer {
-  from {
+  0% {
+    opacity: 0.01;
+  }
+  1% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 @keyframes aparecer {
-  from {
+  0% {
+    opacity: 0.01;
+  }
+  1% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -358,7 +364,7 @@ body {
 
 .cursor {
   position: fixed;
-  background-image: url(../assets/diamon__cursorv2.png);
+  background-image: url(../assets/diamon__cursorv2.webp);
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -391,111 +397,12 @@ body {
 .cursorhand__active {
   width: 3.5em;
   min-height: 3.5em;
-  background-image: url(../assets/diamon__cursorhand.png);
+  background-image: url(../assets/diamon__cursorhand.webp);
   background-size: 80% auto;
   background-repeat: no-repeat;
   background-position: center;
   -webkit-transition-property: width, min-height, background-image, background-repeat, background-size;
   transition-property: width, min-height, background-image, background-repeat, background-size;
-}
-
-@-webkit-keyframes cursor__animation {
-  from {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  to {
-    -webkit-transform: rotate(70deg);
-            transform: rotate(70deg);
-  }
-}
-
-@keyframes cursor__animation {
-  from {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-  to {
-    -webkit-transform: rotate(70deg);
-            transform: rotate(70deg);
-  }
-}
-.animation__on {
-  position: fixed;
-  z-index: 10;
-  width: 100vw;
-  min-height: 100%;
-  top: 0;
-  left: 0;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  opacity: 0;
-}
-.animation__on.uno {
-  background-color: #0F5958;
-}
-.animation__on.uno.color {
-  background-color: #0F5958;
-}
-.animation__on.dos {
-  background-color: #ffb59d;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-.animation__on.dos.color {
-  background-color: #ffb59d;
-}
-.animation__on.tres {
-  background-color: #147674;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.animation__on.tres::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  min-height: 0px;
-  margin: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  border: 3em solid var(--colorSECUNDARIO-BLACK);
-  border-color: var(--colorSECUNDARIO-BLACK) transparent var(--colorSECUNDARIO-BLACK) transparent;
-  -webkit-animation-name: loading;
-          animation-name: loading;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-.animation__on.tres.color {
-  background-color: var(--colorPRIMARIOG-BLACK);
-}
-.animation__on.activo {
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
-  opacity: 1;
-}
-.animation__on.reverse {
-  -webkit-transform-origin: right;
-          transform-origin: right;
 }
 
 .animation__textcont {
@@ -976,7 +883,7 @@ body {
   -webkit-transition: all 1s 0.45s ease;
   transition: all 1s 0.45s ease;
 }
-@media screen and (max-width: 20rem) {
+@media screen and (max-width: 20em) {
   .menu__movila {
     font-size: 1.8em;
   }
@@ -2156,7 +2063,7 @@ body {
 .hexagon__cont {
   width: 100%;
   height: 100%;
-  background-image: url(../assets//tip.png);
+  background-image: url(../assets/tip.webp);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -2166,7 +2073,7 @@ body {
 .hexagon__cont2 {
   width: 100%;
   height: 100%;
-  background-image: url(../assets/portfolio.png);
+  background-image: url(../assets/portfolio.webp);
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -2738,7 +2645,7 @@ body {
 .img__headerproyecto {
   width: 100%;
   min-height: 40vh;
-  background-image: url(../assets/pruebaprueba.jpg);
+  background-image: url(../assets/bgPortfolio.webp);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

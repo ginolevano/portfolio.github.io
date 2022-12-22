@@ -20,7 +20,7 @@ body{
 
 .cursor{
     position: fixed;
-    background-image: url(../assets/diamon__cursorv2.png);
+    background-image: url(../assets/diamon__cursorv2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -50,7 +50,7 @@ body{
 .cursorhand__active{
     width: 3.5em;
     min-height: 3.5em;
-    background-image: url(../assets/diamon__cursorhand.png);
+    background-image: url(../assets/diamon__cursorhand.webp);
     background-size: 80% auto ;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,107 +58,14 @@ body{
     
 }
 
-@keyframes cursor__animation {
-    from{
-        transform: rotate(90deg);
-    }
-    to{
-        transform: rotate(70deg);
-
-    }
-}
-// .cursorhandheart__active{
-//     background-image: url(../assets/diamon__cursorv1.png);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     transition: 200ms;
-//     transition-property: background-image,  background-repeat, background-size ;
-//     border: none;
-//     animation: none;
-//     backdrop-filter: none;
-//     pointer-events: none;
-
-// }
-
-
-
-
-
-.animation__on{
-    position: fixed;
-    z-index: 10;
-    width: 100vw;
-    min-height: 100%;
-    top: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: all .5s  ease ;
-    transform-origin: left;
-    opacity: 0;
-
-    &.uno{
-        background-color: #0F5958;
-
-        &.color{
-            background-color:#0F5958;
-
-        }
-    }
-
-
-    &.dos{
-        background-color: #ffb59d;
-        transition-delay: .2s;
-        &.color{
-            background-color: #ffb59d;
-
-        }
-
-    }
-
-    &.tres{
-        background-color: #147674;
-        transition-delay: .3s;
-        @include mixins.center;
-        &::before{
-            content: "";
-            position: absolute;
-            width: 0px;
-            min-height: 0px;
-            margin: 8px;
-            box-sizing: border-box;
-            border-radius: 50%;
-            border: 3em solid var(--colorSECUNDARIO-BLACK);
-            border-color: var(--colorSECUNDARIO-BLACK) transparent var(--colorSECUNDARIO-BLACK) transparent;
-            animation-name: loading;
-            animation-duration: 1.2s;
-            animation-timing-function: ease ;
-            animation-iteration-count: infinite;
-        }
-        &.color{
-            background-color: var(--colorPRIMARIOG-BLACK);
-        }
-    }
-    &.activo{
-        transform: scaleY(1);
-        opacity: 1;
-    }
-    &.reverse{
-
-        transform-origin: right;
-    }
-}
 
 .animation__textcont{
     width: 100%;
     height: 100vh;
-    
-
     position: absolute;
 
-
-    
 }
+
 .animation__texts{
     width:0%;
     position: fixed;
@@ -523,7 +430,7 @@ body{
     transform: translateY(10em);
     transition: all 1s .45s ease;
 
-    @media screen and (max-width:20rem) {
+    @media screen and (max-width:20em) {
         font-size: 1.8em;;
     }
     @media screen and (max-width:243px) {
@@ -1454,14 +1361,7 @@ body{
 
     }
 
-    
-    // @media screen and (max-width:999px) {
-        
-    //     &:not(:last-child){
-    //         margin-right: 0em;
-    //         margin-bottom: 3em;
-    //     }
-    // }
+
 }
 
 .active.hexagon__li{
@@ -1487,7 +1387,7 @@ body{
     
     width: 100%;
     height: 100%;
-    background-image: url(../assets//tip.png);
+    background-image: url(../assets/tip.webp);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -1497,7 +1397,7 @@ body{
 .hexagon__cont2{
     width: 100%;
     height: 100%;
-    background-image: url(../assets/portfolio.png);
+    background-image: url(../assets/portfolio.webp);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -1602,8 +1502,6 @@ body{
         
         @media screen and (max-width:960px) {
             width: 90%;
-
-
             font-size: clamp(1.5rem, 20vw, 1.5rem);
             
         }
@@ -1940,16 +1838,13 @@ body{
     width: 100%;
     min-height: 40vh;
     
-    background-image: url(../assets/pruebaprueba.jpg);
+    background-image: url(../assets/bgPortfolio.webp);
     background-size:  cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
-    
-
-
     
 }
 
@@ -2014,13 +1909,6 @@ body{
     position: relative;
     overflow: hidden;
     background-color: var(--colorPRIMARIOG-BLACK);
-
-
-
-    // @media screen and (max-width:960px) {
-    //     padding: 6em 0em 6em 0em;
-    // }
-
     
 }
 
@@ -2074,12 +1962,6 @@ body{
         padding: 6em 0em 6em 0em;
         @include mixins.column;
     }
-
-    // @media screen and (max-width:500px) {
-    //     padding: 4em 0em 4em 0em;
-
-    // }
-
 }
 .contenido__proyectinf{
     width: 100%;
@@ -2210,8 +2092,6 @@ body{
         width: 100%;
         display: flex;
         flex-direction: column;
-
-
     }
 }
 
@@ -2257,12 +2137,7 @@ body{
             height: 1px;
             background-color: var(--colorSECUNDARIO-WHITE);
         }
-
     }
-
-    
-    
-    
 
 }
 
@@ -2306,7 +2181,6 @@ body{
     -webkit-text-stroke: 2px var(--colorSECUNDARIO-WHITE);
     color: transparent;
     font-size: var(--SizeTitles);
-    // padding: 2em 0em 2em 0em;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
