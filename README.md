@@ -1,4 +1,4 @@
-# Description 🌈🏄🏽‍♂️
+# Description 🏄🏽‍♂️
 ## - Under construction -
 ### This is my personal website, created using
 
