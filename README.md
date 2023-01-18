@@ -1,9 +1,8 @@
 # Description
 ## - Under construction -
-### This is my personal website, created using HTML, SASS, and jQuery.
+### This is my personal website, created using
 
-
-# HTML , SASS , JQUERY 3.6.2
+# HTML , SASS , JQUERY 3.6.2 
 
 
 ## Check My Portfolio 2023 👉🏽  https://ginolevano.github.io/
