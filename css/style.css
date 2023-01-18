@@ -2997,6 +2997,11 @@ body {
 .section__litip :not(:first-child) {
   margin-right: 5em;
 }
+@media screen and (max-width: 960px) {
+  .section__litip {
+    margin-top: 1.5em;
+  }
+}
 
 .section__span {
   margin-bottom: 1em;
@@ -3036,6 +3041,7 @@ body {
   font-size: clamp(1.5rem , 20vw, 1.5rem);
   color: var(--colorText);
   line-height: 1.4;
+  margin-top: 0.4em;
 }
 @media screen and (max-width: 1788px) {
   .section__ptip {
