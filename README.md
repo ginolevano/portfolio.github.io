@@ -1,5 +1,5 @@
 # Description
-- Under construction -
+## - Under construction -
 ### This is my personal website, created using HTML, SASS, and jQuery. To access the website, simply double-click on the index.html file.
 
 
