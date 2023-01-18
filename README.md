@@ -1,6 +1,6 @@
-# ginolevano.github.io
-
-### This is my personal web page made with html, sass and Jquery if you want to view the web page you just have to double click on the index.html folder.
+# Description
+- Under construction -
+### This is my personal website, created using HTML, SASS, and jQuery. To access the website, simply double-click on the index.html file.
 
 
 # HTML
@@ -11,4 +11,6 @@
 <img width="1878" alt="Portfolio" src="https://user-images.githubusercontent.com/95493476/208790864-90df9361-8c16-4b7f-8820-7369b1d38dbb.png">
 
 
-ALL THE DEVELOPMENT AND DESIGN BY GINO LEVANO .
+ALL THE DEVELOPMENT AND DESIGN BY GINO LEVANO.
+
+# Made with love ❤️
