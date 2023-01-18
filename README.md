@@ -13,6 +13,7 @@
 
 To access the website, simply double-click on the index.html file.
 
-ALL THE DEVELOPMENT AND DESIGN BY GINO LEVANO.
+
 
 # Made with love ❤️
+ALL THE DEVELOPMENT AND DESIGN BY GINO LEVANO.
