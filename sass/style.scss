@@ -1388,8 +1388,10 @@ body{
     width: 100%;
     height: 100%;
     background-image: url(../assets/tip.webp);
-    background-size: cover;
+    background-size: 150% auto;
     background-position: center;
+    background-repeat: no-repeat;
+
     position: absolute;
     z-index: -1;
 }
@@ -1398,12 +1400,22 @@ body{
     width: 100%;
     height: 100%;
     background-image: url(../assets/portfolio.webp);
-    background-size: cover;
+    background-size: 150% auto;
     background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
 }
-
+.hexagon__cont3{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/dr.jpg);
+    background-size: 150% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+}
 .hexagon__up{
     width: 100%;
     height: 100%;
@@ -1431,7 +1443,6 @@ body{
     transition:  all .5s ease;
 
 }
-
 
 .about__mecont{
     background: transparent;
