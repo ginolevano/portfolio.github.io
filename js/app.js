@@ -2,6 +2,10 @@
 
 console.log("Jquery")
 
+let name = 'jeff'
+console.log('my name is ' + name)
+
+
 $(()=>{
     $('.close__all').on("click",()=> {
         $('.cookies__close').addClass('activo')
